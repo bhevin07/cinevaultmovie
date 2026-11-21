@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { moviesData as fallbackMoviesData } from './moviesdata.jsx';
 import './App.css';
 
-const API_URL = 'http://localhost:5000/api/movies';
+const API_URL = 'https://cinevaultmovie-804y.onrender.com';
 
 function App() {
   const [moviesList, setMoviesList] = useState(fallbackMoviesData);
