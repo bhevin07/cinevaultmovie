@@ -1,5 +1,5 @@
 import express from 'express';
-import mongoose from 'mongoose';
+import mongoose from 'mongoose';GIT
 import cors from 'cors';
 
 const app = express();
@@ -32,6 +32,14 @@ app.get('/api/movies', async (req, res) => {
   } catch (err) {
     res.status(500).json({ message: err.message });
   }
+});
+
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
+
+app.listen(PORT, () => {
+  console.log("Server running");
 });
 
 app.listen(PORT, () => {
